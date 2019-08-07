@@ -1,7 +1,9 @@
 ## Balance transfer를 활용한 블록체인 기반 투표 시스템
 
 #### Balance transfer 깃허브 주소
+```
 https://github.com/hyperledger/fabric-samples/tree/release-1.4/balance-transfer
+```
 
 node.js 서버에 클라이언트를 위한 투표 웹 페이지를 올리고 클라이언트를 REST API와 EXPRESS.js를 이용하여 블록체인 네트워크와 연결시키고 클라이언트가 웹 어플리케이션을 통해 보내는 명령에 해당하는 체인코드를 실행할 수 있도록 하였다.
 
