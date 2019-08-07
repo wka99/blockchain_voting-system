@@ -1,3 +1,20 @@
+## Balance transfer를 활용한 블록체인 기반 투표 시스템
+
+Balance transfer 깃허브 주소
+https://github.com/hyperledger/fabric-samples/tree/release-1.4/balance-transfer
+
+node.js 서버에 클라이언트를 위한 투표 웹 페이지를 올리고 클라이언트를 REST API와 EXPRESS API를 이용하여 블록체인 네트워크와 연결시키고 클라이언트가 웹 어플리케이션을 통해 보내는 명령에 해당하는 체인코드를 실행할 수 있도록 하였다.
+
+사용자는 운영자와 투표자 두 종류로 나뉘며 투표자는 후보 중 한명을 선택하여 투표를 할 수 있고 운영자는 투표 결과를 확인할 수 있으며, 블록이 쌓이는 것을 모니터링할 수 있다.
+
+사용자는 회원가입이 되어있는 상태라고 가정하였으며, 사용자의 아이디와 비밀번호를 저장한 데이터베이스를 구성하였다. 테이블은 투표자 테이블, 운영자 테이블 두개로 비밀번호는 해시화하여 저장되며 투표자 테이블은 운영자 테이블과 다르게 단과대 정보와 투표 여부를 표시하는 column이 존재한다. 투표 여부를 표시하는 column은 투표자가 투표를 한번만 할 수 있도록 하기 위함이다.
+
+balance transfer의 블록체인 네트워크의 구조는 organization 2개와 각 organization 당 peer 2개로 구성되어있다.
+본 투표 시스템에서는 organization 1을 투표자 organization으로 사용하였으며, organizaiton 2를 운영자 organization으로 사용하였다.
+org1의 peer0, peer1은 공과대, 이과대를 나타낸다.
+
+본 투표 시스템은 투표자가 로그인을 하면 해당 투표자의 단과대에 해당하는 peer에 대한 권한을 부여하는 방식으로 운영된다.
+
 ## Balance transfer
 
 A sample Node.js app to demonstrate **__fabric-client__** & **__fabric-ca-client__** Node.js SDK APIs
