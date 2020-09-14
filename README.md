@@ -2,6 +2,7 @@
 by 박지수, 정유나, 하유진, 유소영
 
 ### 1. 프로그램 구조
+<p align="center"><img src="https://user-images.githubusercontent.com/43545606/93042328-b53f5300-f689-11ea-87d7-ec963e90e5af.png"></p>
 
 node.js 서버에 클라이언트를 위한 투표 웹 페이지를 올리고 클라이언트를 REST API와 EXPRESS.js를 이용하여 블록체인 네트워크와 연결시키고 클라이언트가 웹 어플리케이션을 통해 보내는 명령에 해당하는 체인코드를 실행할 수 있도록 하였다. 투표자 검증을 위해서는 mysql 데이터 베이스를 사용하였다.
 
